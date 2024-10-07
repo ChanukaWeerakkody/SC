@@ -26,6 +26,7 @@ const Home = () => {
   const [animationEnded, setAnimationEnded] = useState(false);
   const [products, setProducts] = useState([]); // State to store fetched products
   const [selectedCategory, setSelectedCategory] = useState('All'); // State to track selected category
+    const backendUrl = process.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,7 +38,7 @@ const Home = () => {
   // Fetch popular products from the API
   const fetchPopularProducts = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/v1/products/popular");
+      const response = await fetch(`${backendUrl}/api/v1/products/popular`);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
