@@ -14,11 +14,11 @@ import Tropy from './pages/service/tropy';
 import SearchResults from './components/serchresult';
 import Admin from './pages/admin';
 import Footer from './components/footer1';
-import Signup from './pages/LogIn.jsx';
+import Signup from './pages/signup';
 import Adminadd from './pages/adminadd';
 import ScrollToTop from './components/ScrollToTop';
 import Layout from './components/Layout';
-import Login from "./pages/LogIn.jsx"; // Import the new Layout component
+import Login from "./pages/signup"; // Import the new Layout component
 
 const App = () => {
   return (
