@@ -17,7 +17,8 @@ import Footer from './components/footer1';
 import Signup from './pages/signup';
 import Adminadd from './pages/adminadd';
 import ScrollToTop from './components/ScrollToTop';
-import Layout from './components/Layout'; // Import the new Layout component
+import Layout from './components/Layout';
+import Login from "./pages/signup"; // Import the new Layout component
 
 const App = () => {
   return (
@@ -38,7 +39,7 @@ const App = () => {
           <Route path="/custmise" element={<Cust />} />
           <Route path="/product/:productId" element={<SingleItem />} />
           <Route path="/search" element={<SearchResults />} />
-          <Route path="/login" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/adminadd" element={<Adminadd />} />
         </Routes>
       </Layout>
