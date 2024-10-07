@@ -26,7 +26,7 @@ const App = () => {
       <ScrollToTop />
       <Layout> {/* Use Layout to wrap your routes */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Login />} />
           <Route path="/shop" element={<Shoping />} />
           <Route path="/aboutus" element={<About />} />
           <Route path="/services" element={<Services />} />
